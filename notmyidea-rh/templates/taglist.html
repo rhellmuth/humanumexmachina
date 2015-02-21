@@ -1,0 +1,16 @@
+{% if article.tags %}
+	<p>
+		<i class="fa fa-tags"></i> {% for tag in article.tags %}
+		<a href="{{ SITEURL }}/{{ tag.url }}">
+			{{ tag | escape }}
+		</a> 
+		{% endfor %}
+	</p>
+{% endif %}
+{% if PDF_PROCESSOR %}
+	<p>
+		<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">
+		<i class="fa fa-file-pdf-o"></i>	PDF
+		</a>
+	</p>
+{% endif %}

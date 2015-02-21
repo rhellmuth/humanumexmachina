@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# pelican
+output/
+cache/
+*.pid
+
+# OS
+Thumbs.db
+.DS_Store
